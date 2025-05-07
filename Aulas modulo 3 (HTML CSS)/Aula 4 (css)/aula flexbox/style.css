@@ -1,0 +1,39 @@
+#container {
+    background-color: #1a1a1a;
+    color: white;
+
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center; /*pode pesquisar outros*/
+    align-items: flex-end; /*pode pesquisar outros*/
+    gap: 16px;
+
+    flex-direction: column;
+
+    flex-wrap: wrap; /*Quebra as linhas quando os elemntos não cabem na tela*/
+}
+
+.quadrado {
+    min-width: 100px;
+    min-width: 100px;
+}
+
+#quadrado_vermelho {
+    background-color: red;
+    order: 1;
+}   
+
+#quadrado_verde {
+    background-color: green;
+    order: -1;
+}
+
+#quadrado_azul {
+    background-color: blue;
+    align-self: stretch;
+}
+
+#quadrado_roxo {
+    background-color: purple;
+}

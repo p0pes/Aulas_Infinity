@@ -1,0 +1,22 @@
+#primeiro_titulo {
+    background-color: aqua;
+    color: red;
+}
+
+.Div {
+    color: green;
+}
+
+#bloco {
+    background-color: brown;
+
+    width: 150px;
+    height: 150px;
+    
+    padding: 32px;
+
+    border: 10px solid violet;
+    border-radius: 999999px;
+
+    margin: 32px;
+}

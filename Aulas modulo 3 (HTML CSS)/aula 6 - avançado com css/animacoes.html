@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animações</title>
+<style>
+    .vermelho{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: all 2s;
+    }
+
+    .vermelho:hover {
+        width: 150px;
+        height: 150px;
+    }
+
+    .azul{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+
+        position: relative;
+        animation: movimento 3s infinite alternate;
+    }
+
+    @keyframes movimento {
+        0% {
+            width: 20px;
+        }
+
+        50% {
+            width: 15px;
+            height: 25px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="vermelho"></div>
+    <div class="azul"></div>
+</body>
+</html>

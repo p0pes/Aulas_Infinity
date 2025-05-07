@@ -1,0 +1,53 @@
+#container {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+#quadrado_vermelho {
+    background-color: red;
+
+    /*Position static faz com que permaneça estatico a comandos como top bottom right left */
+    /* position: static; */
+
+    position: relative;
+    /* Faz o posicionamento ser relativo a sua posição original em detrminados pixeis*/
+
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#quadrado_verde {
+    background-color: green;
+    
+    position: sitcky;
+    top: 10px;
+    /* altera ao atingir certo ponto da tela */
+
+}
+
+#quadrado_azul {
+    background-color: blue;
+
+    position: fixed;
+    /* Faz o posicionamento ser relativo a tela em detrminados pixeis*/
+
+    right: 1px;
+    bottom: 1px;    
+
+}
+
+#quadrado_roxo {
+    background-color: purple;
+
+    position: absolute;
+    /* Faz o posicionamento ser relativo ao primeiro elemento parente em detrminados pixeis*/
+
+}
