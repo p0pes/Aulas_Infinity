@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pedro Lima Lopes</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          list-style: none;  
+        }
+        
+        :where(a) {
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cor_primaria : #A83044;
+            --cor-secundaria : #e5455f;
+            --cor-fundo : #cfcbcc;
+
+            --titulo-lg: 2.25rem;
+            --titulo-md: 2rem;  
+            --texto: 1rem;
+        }
+
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .caixa-cabecalho {
+            background-color: white;
+            border: 2px solid var(--cor_primaria);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 12px;    
+        }
+
+        #titulo__cabecalho {
+            color: var(--cor_primaria);
+            font-size: var(--titulo-lg);   
+            margin-bottom: 1rem;
+            text-shadow: 
+                -0.5px -0.5px 0 black,
+                0.5px -0.5px 0 black,
+                -0.5px  0.5px 0 black,
+                0.5px  0.5px 0 black;
+        }
+
+        #descricao_cabecalho {
+            color: var(--cor-secundaria);
+            font-size: var(--texto);
+        }
+
+        .introducao {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .imagem-codigo {
+            width: 300px;  
+            border-radius: 16px;
+            border: 3px solid var(--cor_primaria);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .texto-sobre {
+            flex: 1;
+        }
+
+        .secao {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .secao h2 {
+            color: var(--cor_primaria);
+            font-size: var(--titulo-md);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--cor_primaria);
+            padding-bottom: 0.5rem;
+        }
+
+        .lista-habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .lista-habilidades li {
+            background-color: var(--cor_primaria);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .grid-projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .projeto {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-left: 6px solid var(--cor-secundaria);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .projeto:hover {
+            transform: scale(1.03);
+        }
+
+        .experiencia {
+            margin-top: 2rem;
+            background-color: #fff;
+            border-left: 6px solid var(--cor_primaria);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .rodape {
+            background-color: var(--cor_primaria);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .rodape .redes-sociais {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .rodape button {
+            background-color: white;
+            color: var(--cor_primaria);
+            border: 2px solid white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .rodape button:hover {
+            background-color: var(--cor-secundaria);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: var(--cor-fundo);">
+    
+    <div class="caixa-cabecalho">
+        <header>
+            <h1 id="titulo__cabecalho">Pedro Lima Lopes</h1>
+            <p id="descricao_cabecalho">Este é meu portfólio em HTML / CSS demonstrando minhas habilidades na área.</p>
+        </header>
+    </div>
+
+    <section class="introducao">
+        <img src="figure-162826_01-dmxcxveath.jpeg" class="foto-perfil">
+        <div class="texto-sobre">
+          <h2 style="color: var(--cor_primaria);">Sobre Mim</h2>
+          <p style="color: black;">Sou desenvolvedor back-end, estudando front-end que adora criar experiências digitais interativas. Estudo HTML, CSS, JavaScript, Python e estou avançando em frameworks modernos.</p>
+        </div>
+        <img src="imagem_codigo.jpeg" class="imagem-codigo">
+    </section>        
+
+      <section id="habilidades" class="secao">
+        <h2>Habilidades</h2>
+        <ul class="lista-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git & GitHub</li>
+          <li>Python</li>
+        </ul>
+      </section>
+      
+      <section id="projetos" class="secao">
+        <h2>Projetos Anteriores</h2>
+        <div class="grid-projetos">
+          <div class="projeto">Portfólio Pessoal</div>
+          <div class="projeto">Versionamento GitActions</div>
+          <div class="projeto">Programa de cadastro com SQL</div>
+        </div>
+      </section>
+      
+      <section id="experiencias" class="secao">
+        <h2>Experiências na área</h2>
+        <div class="experiencia">
+          <h3>Faculdade em ciências da computação</h3>
+          <p>Unifacs 2022 – 2025</p>
+          <p>Estou cursando o quinto semestre de Ciências da Computação na universidade Unifacs.</p>
+        </div>
+        <div class="experiencia">
+            <h3>Curso de dev fullstack na infinity school</h3>
+            <p>Unifacs 2022 – 2025</p>
+            <p>Estou cursando desenvolvimento full stack na infinity school, onde ja finalizei o módulo de Python e  HTML e CSS e estou atualmente estudando JavaScript</p>
+          </div>
+      </section>
+      
+      <footer class="rodape">
+        <p>© 2025 Pedro Lima Lopes • Todos os direitos reservados</p>
+        <div class="redes-sociais">
+          <button>GitHub</button>
+          <button>LinkedIn</button>
+          <button>Email</button>
+        </div>
+      </footer>
+</body>
+</html>
